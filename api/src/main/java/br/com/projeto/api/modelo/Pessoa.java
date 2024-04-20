@@ -13,17 +13,18 @@ public class Pessoa {
     //Atributo
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int codigo;
+    private Long codigo;
+    
     private String nome;
     private String idade;
-
-
+    
+    
     //Get e Set
     
-    public int getCodigo() {
+    public long getCodigo() {
         return codigo;
     }
-    public void setCodigo(int codigo) {
+    public void setCodigo(long codigo) {
         this.codigo = codigo;
     }
 
