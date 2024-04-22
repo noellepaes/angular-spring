@@ -15,6 +15,8 @@ public interface Repositorio extends CrudRepository<Pessoa, Long>{
     List<Pessoa> findByOrderByNome();
 
     @Query(value = "SELECT SUM(idade) FROM PESSOAS"
-    , nativeQuery = true)
-    int somaIdades();
+    , nativeQuery = true)int somaIdades();
+
+
+    int countByCodigo(int codigo);
 }

@@ -16,18 +16,17 @@ public class Pessoa {
     private Long codigo;
     
     private String nome;
-    private String idade;
+    private Integer idade;
     
     
     //Get e Set
-    
     public long getCodigo() {
         return codigo;
     }
     public void setCodigo(long codigo) {
         this.codigo = codigo;
     }
-
+    
     public String getNome() {
         return nome;
     }
@@ -35,10 +34,11 @@ public class Pessoa {
         this.nome = nome;
     }
     
-    public String getIdade() {
+    public Integer getIdade() {
         return idade;
     }
-    public void setIdade(String idade) {
+    public void setIdade(Integer idade) {
         this.idade = idade;
     }
+
 }
